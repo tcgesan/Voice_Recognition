@@ -1,9 +1,18 @@
 #text{
-    background-color: black;
+    background-color: none;
     color: white;
     font-size: 70px;
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    height: 0150px;
+    border-radius: 50px;
     position: absolute;
-    margin-top: 50%;
+    margin-top: 40%;
+    box-shadow: 0px 1px 80px 7px;
+    border: none;
     
 }
 
@@ -18,3 +27,39 @@ body{
     align-content: center;
     justify-items: center;
 }
+
+#english-btn{
+    position: absolute;
+    display: block;
+    background:linear-gradient(to right, #093bc6, #e100ff);
+    overflow: hidden;
+    /* box-shadow: 1px 3px 15px 2px silver; */
+    border: none;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    width: 170px;
+    height: 60px;
+    font-weight: bold;
+    margin-right: 15%;
+    user-select: none;
+    margin-top: 70%;
+}
+
+
+#bangla-btn{
+    overflow: hidden;
+    position: absolute;
+    background:linear-gradient(to right, rgb(6, 6, 221),rgb(240, 131, 189));
+    border: none;
+    color: white;
+    border-radius: 50px;
+    position:absolute;
+    margin-left: 10%;
+    margin-top: 70%;
+    width: 170px;
+    height: 60px;
+    user-select: none;
+    font-weight: bold;
+}
+
