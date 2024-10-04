@@ -3,36 +3,121 @@
 
 
 #text{
-    background-color: none;
+    background-color:black;
     color: white;
+    /* left: 0; */
     font-size:13px;
-    width: 90%;
+    width: 80%;
+    margin-left: 10px;
     display: flex;
     align-items: center;
     align-content: center;
-    /* overflow: hidden; */
     text-align: center;
+    animation: shadow 3s linear 1;
+    justify-content: center;
+    border: 7px solid dotted white;
+    justify-items: center;
+    height: 150px;
+    border-radius: 10px;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 560px;
+    /* box-shadow: 1px 2px 70px 7px silver;  */
+    transition-duration: 2s;
+    /* animation: fix 10s linear infinite; */
+}
+#text2{
+    
+    background-color: pink;
+    color: white;
+    /* left: 0; */
+    border: 12px solid dotted rgb(252, 252, 252);
+    font-size:13px;
+    width: 80%;
+    z-index: -1;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    /* animation: shadow 3s linear 1; */
     justify-content: center;
     justify-items: center;
-    height: 70px;
-    border-radius: 50px;
+    height: 150px;
+    border-radius: 10px;
     position: absolute;
-    margin-top: 520px;
-    box-shadow: 0px 1px 80px 7px;
-    border: none;
-    
+    margin-top: 560px;
+    /* box-shadow: 1px 2px 80px 7px silver;  */
+    transition-duration: 2s;
+    animation: fix 10s linear infinite;
 }
 
+
+
+@keyframes fix{
+    0%{
+        box-shadow:0px 1px 80px 7px white;
+        
+    }
+    30%{
+        box-shadow:0px 1px 80px 7px skyblue;
+    
+    }
+    60%{
+        box-shadow:0px 1px 80px 7px pink;
+       
+    }
+    
+    80%{
+        box-shadow:0px 1px 80px 7px blue;
+     
+    }
+    
+    100%{
+        box-shadow:0px 1px 80px 7px #b7b7f1;
+       
+    }
+    }
+
+@keyframes shadow{
+0%{
+    transition-duration: 1s;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+30%{
+    /* box-shadow:0px 1px 80px 7px skyblue; */
+    width: 90%;
+/* border-radius: 50px; */
+color: white;
+background-color: black;
+}
+60%{
+    width: 80%;
+    background-color: black;
+    color: white;
+}
+
+80%{
+    background-color: black;
+    color: white;
+}
+
+100%{
+    color: white;
+    width: 80%;
+    background-color:black;
+border-radius: 10px;
+}
+}
 
 #gif{
     position: absolute;
-    margin-top: 180px;
+    margin-top: 100px;
+    margin-left: -20px;
 }
 
-h1{
-   
-    background: linear-gradient(to right, blue,deeppink);
-}
 
 body{
     background-color: black;
@@ -50,11 +135,12 @@ body{
 #english-btn{
     position: absolute;
     display: block;
-    background:linear-gradient(to right, #edbac2, #f05532);
+    /* background:linear-gradient(to right, #edbac2, #f05532); */
     overflow: hidden;
-    /* box-shadow: 1px 3px 15px 2px silver; */
+    box-shadow: 1px 3px 25px 2px rgb(41, 6, 240);
     border: none;
     border: none;
+    background-color: blue;
     color: white;
     border-radius: 50px;
     width: 170px;
@@ -63,22 +149,53 @@ body{
     font-weight: 550;
     /* margin-right: 2%; */
     user-select: none;
+    animation: bg 1s linear infinite;
     /* font-size: 13px; */
-    margin-top: 870px;
+    margin-top: 980px;
+}
+@keyframes bg{
+    0%{
+    color: blue;
+    }
+    30%{
+        color: white;
+    }
+    60%{
+        color: white;
+    }
+    100%{
+        color: blue;
+    }
 }
 
+@keyframes bg2{
+    0%{
+    color: aliceblue;
+    }
+    30%{
+        color: black;
+    }
+    60%{
+        color: black;
+    }
+    100%{
+        color: aliceblue;
+    }
+}
 
 #bangla-btn{
     overflow: hidden;
     position: absolute;
-    background:linear-gradient(to right, rgb(6, 6, 221),rgb(240, 131, 189));
+    /* background:linear-gradient(to right, rgb(6, 6, 221),rgb(240, 131, 189)); */
     border: none;
     color: white;
     border-radius: 50px;
     position:absolute;
+    animation: bg2 1s linear infinite;
     margin-left: 1%;
-    /* font-size: 13px; */
-    margin-top: 980px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 20px 2px aliceblue;
+    margin-top: 1150px;
     width: 170px;
     font-family: "Poppins", sans-serif;
     height: 40px;

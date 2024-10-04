@@ -1,5 +1,5 @@
 let element = document.getElementById("text");
-
+// let element = document.getElementById("text2");
 // SpeechRecognition object
 const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)(); 
 
