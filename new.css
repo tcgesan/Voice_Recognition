@@ -217,7 +217,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.body2{
+    background-color: black;
+    text-align: center;
 
+}
+
+h1{
+    position:absolute;
+    margin-top: 60%;
+}
 #bangla-btn{
     overflow: hidden;
     position: absolute;
