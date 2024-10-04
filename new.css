@@ -1,42 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
+.light{
+    background: linear-gradient(to right,white,rgb(108, 105, 105));
+    width: 28%;
+    height: 100px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 10px;
+    position:absolute;
+    border: 2px solid black;
+    margin-top: 57%;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 80px;
+    transform: rotate(-140deg);
+}
+.line{
+    border-left: 3px solid white;
+    width: 10px;
+    height: 320px;
+    position: absolute;
+    margin-left: -5px;
+    z-index: -1;
+}
 #text{
     background-color:black;
     color: white;
-    /* left: 0; */
     font-size:13px;
     width: 80%;
+    border-top: 3px solid white;
     margin-left: 10px;
+    border-bottom: 3px solid white;
     display: flex;
     align-items: center;
     align-content: center;
+    border-left: 3px solid silver;
+    border-right: 3px solid silver;
     text-align: center;
     animation: shadow 3s linear 1;
     justify-content: center;
     border: 7px solid dotted white;
     justify-items: center;
+    transition-duration: 0.4s;
     height: 150px;
     border-radius: 10px;
     z-index: 1000;
     position: absolute;
-    margin-top: 560px;
-    /* box-shadow: 1px 2px 70px 7px silver;  */
-    transition-duration: 2s;
-    /* animation: fix 10s linear infinite; */
+opacity: 0.4;
+    margin-top: 470px;
+}
+
+#text:hover{
+    transform: scale(1.1);
 }
 #text2{
     
-    background-color: pink;
+    background-color: rgb(15, 0, 3);
     color: white;
     /* left: 0; */
+    opacity: 0.9;
     border: 12px solid dotted rgb(252, 252, 252);
     font-size:13px;
     width: 80%;
     z-index: -1;
     margin-left: 10px;
     display: flex;
+    transition-duration: 0.2s;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -46,8 +73,7 @@
     height: 150px;
     border-radius: 10px;
     position: absolute;
-    margin-top: 560px;
-    /* box-shadow: 1px 2px 80px 7px silver;  */
+    margin-top: 470px;
     transition-duration: 2s;
     animation: fix 10s linear infinite;
 }
@@ -87,7 +113,6 @@
     color: white;
 }
 30%{
-    /* box-shadow:0px 1px 80px 7px skyblue; */
     width: 90%;
 /* border-radius: 50px; */
 color: white;
@@ -114,8 +139,12 @@ border-radius: 10px;
 
 #gif{
     position: absolute;
-    margin-top: 100px;
-    margin-left: -20px;
+    margin-top: 83%;
+    border-top: 2px solid blue;
+    margin-left: 8px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 1px 7px 75px 2px blue;
 }
 
 
@@ -135,7 +164,6 @@ body{
 #english-btn{
     position: absolute;
     display: block;
-    /* background:linear-gradient(to right, #edbac2, #f05532); */
     overflow: hidden;
     box-shadow: 1px 3px 25px 2px rgb(41, 6, 240);
     border: none;
@@ -147,11 +175,14 @@ body{
     font-family: "Poppins", sans-serif;
     height: 40px;
     font-weight: 550;
-    /* margin-right: 2%; */
     user-select: none;
     animation: bg 1s linear infinite;
-    /* font-size: 13px; */
+    transition-duration: 0.5s;
     margin-top: 980px;
+}
+
+#english-btn:hover{
+    transform: scale(1.1);
 }
 @keyframes bg{
     0%{
@@ -182,11 +213,14 @@ body{
         color: aliceblue;
     }
 }
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #bangla-btn{
     overflow: hidden;
     position: absolute;
-    /* background:linear-gradient(to right, rgb(6, 6, 221),rgb(240, 131, 189)); */
     border: none;
     color: white;
     border-radius: 50px;
@@ -201,5 +235,12 @@ body{
     height: 40px;
     user-select: none;
     font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+
+#bangla-btn:hover{
+    transform: scale(1.1);
+
 }
 
